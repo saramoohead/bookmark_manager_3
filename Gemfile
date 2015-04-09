@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
+gem 'data_mapper'
+gem 'dm-postgres-adapter'
 
 group :development, :test do
   gem 'rspec'
@@ -8,4 +10,5 @@ group :development, :test do
   gem 'rubocop'
   gem 'launchy'
   gem 'capybara'
+  gem 'database_cleaner'
 end
