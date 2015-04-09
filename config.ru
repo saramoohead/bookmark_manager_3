@@ -1,7 +1,4 @@
-require 'rspec/core/rake_task'
-require 'rubocop/rake_task'
+require 'rubygems'
+require File.join(File.dirname(__FILE__), 'server.rb')
 
-RuboCop::RakeTask.new :cop
-RSpec::Core::RakeTask.new :spec
-
-task default: [:cop, :spec]
+run BookmarkManager
